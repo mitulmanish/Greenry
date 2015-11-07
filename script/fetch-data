@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+# Copyright (c) 2015 GreenSync Pty Ltd.  All rights reserved.
+
+require 'uri'
+require 'net/http'
+
+def fetch_data(region, year, month)
+  # example: http://www.nemweb.com.au/mms.GRAPHS/data/DATA201412_VIC1.csv
+  filename = "DATA#{year}#{month.to_s.rjust(2, '0')}_#{region}.csv"
+  url = "http://www.nemweb.com.au/mms.GRAPHS/data/#{filename}"
+
+  STDERR.puts "Fetching #{url}"
+  [filename, Net::HTTP.get(URI(url))]
+end
+
+(1..12).each do |month|
+  filename, data = fetch_data('VIC1', 2014, month)
+  output_path = File.join('data', filename)
+  File.write(output_path, data)
+end
