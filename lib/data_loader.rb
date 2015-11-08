@@ -137,6 +137,7 @@ class DataLoader
       end
 
       threads.each {|t| t.join}
+      puts "Time taken in reading files: " 
       puts Time.now - tt
       $aggregate
     end
@@ -165,6 +166,7 @@ class DataLoader
       end
 
       workers.map(&:join)
+      puts "Time taken in reading files: " 
       puts Time.now - t1
       $aggregate
     end
