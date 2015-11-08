@@ -78,7 +78,8 @@ class DataLoader
 
     def synchronous_unpartitioned file_array
       file_array.each do |path|
-        puts "."
+        #puts "."
+        puts path 
         CSV.foreach(path, headers: true) do |row|
             $aggregate[parse_timestamp(row['SETTLEMENTDATE'])] = parse_price(row['RRP'])
         end
@@ -129,6 +130,8 @@ class DataLoader
         # multi threading to process the contents of the file
         Thread.new(partitions) do |partitions|
           mutex.synchronize do 
+            #STDERR.puts "Loading #{partitions}..."
+            puts ""
             #event_machine ( partitions )
             #parallel ( partitions )
             synchronous_unpartitioned ( partitions )

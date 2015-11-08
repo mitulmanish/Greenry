@@ -67,6 +67,54 @@ day,2014-01-06,3406,4573,4272
   given time, you round up to the nearest half hour -- e.g. 15:11 rounds up to 15:30, so that's
   the row that corresponds.
 
+## Results
+
+
+/home/ubuntu/workspace/data/DATA201406_VIC1.csv
+/home/ubuntu/workspace/data/DATA201408_VIC1.csv
+/home/ubuntu/workspace/data/DATA201402_VIC1.csv
+/home/ubuntu/workspace/data/DATA201401_VIC1.csv
+
+/home/ubuntu/workspace/data/DATA201403_VIC1.csv
+/home/ubuntu/workspace/data/DATA201410_VIC1.csv
+/home/ubuntu/workspace/data/DATA201409_VIC1.csv
+/home/ubuntu/workspace/data/DATA201404_VIC1.csv
+
+/home/ubuntu/workspace/data/DATA201411_VIC1.csv
+/home/ubuntu/workspace/data/DATA201405_VIC1.csv
+/home/ubuntu/workspace/data/DATA201407_VIC1.csv
+/home/ubuntu/workspace/data/DATA201412_VIC1.csv
+
+Time taken in reading files: 
+37.95 seconds
+day,date,min_rrp,max_rrp,average_rrp,median_rrp,rrp_variance,rrp_std_deviation
+Wed 01 Jan 2014,-267,4560,3695,4160,1276795,1130
+Thu 02 Jan 2014,3658,4868,4392,4520,91382,302
+Fri 03 Jan 2014,3904,4711,4408,4399,15296,124
+Sat 04 Jan 2014,3820,4668,4279,4347,57882,241
+Sun 05 Jan 2014,3676,4515,4046,3995,41467,204
+Mon 06 Jan 2014,3406,4573,4272,4393,86567,294
+Tue 07 Jan 2014,3581,4478,4194,4349,58858,243
+Wed 08 Jan 2014,3539,4521,4279,4418,104819,324
+Thu 09 Jan 2014,3791,5785,4736,4720,279450,529
+......
+Thu 18 Dec 2014,1524,4039,2661,2815,398705,631
+Fri 19 Dec 2014,1420,3225,2374,2484,211577,460
+Sat 20 Dec 2014,1464,3298,2317,2340,188864,435
+Sun 21 Dec 2014,1420,3432,2319,2388,469145,685
+Mon 22 Dec 2014,1425,4775,3129,3280,709700,842
+Tue 23 Dec 2014,2224,4625,3365,3391,216392,465
+Wed 24 Dec 2014,1420,2905,2420,2605,174150,417
+Thu 25 Dec 2014,686,2042,1430,1436,88942,298
+Fri 26 Dec 2014,1013,2021,1690,1808,94615,308
+Sat 27 Dec 2014,1354,2030,1837,2020,72907,270
+Sun 28 Dec 2014,1420,3289,2096,2020,356049,597
+Mon 29 Dec 2014,1103,2795,1690,1665,129306,360
+Tue 30 Dec 2014,957,2451,1843,1920,112943,336
+Wed 31 Dec 2014,2020,3569,2425,2028,333904,578
+Total Execution Time: 
+70.651 seconds
+
 ## Copyright
 
 Copyright (c) 2015 GreenSync Pty Ltd.  All rights reserved.
